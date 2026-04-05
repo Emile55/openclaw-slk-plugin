@@ -1,0 +1,19 @@
+{
+  "id": "slk-safety",
+  "name": "SLK Safety Validator",
+  "description": "Formal safety layer for OpenClaw agents. Blocks dangerous bash commands using a 2,360-byte C99 constraint validator with paper proof of correctness. Zero Docker, zero VM, zero cloud. See: hal-05573274",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "description": "Enable SLK safety validation (default: true)"
+      },
+      "blockUnknownActions": {
+        "type": "boolean",
+        "description": "Block actions not recognized by the validator (default: false)"
+      }
+    }
+  }
+}

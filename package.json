@@ -1,0 +1,42 @@
+{
+  "name": "@emile55/openclaw-slk",
+  "version": "1.0.0",
+  "description": "SLK formal safety validator for OpenClaw agents — blocks dangerous commands using a 2,360-byte C99 constraint validator",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2"
+    }
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "safety",
+    "formal-methods",
+    "constraint-validation",
+    "c99",
+    "embedded"
+  ],
+  "author": "Emile Gonkol <egonkol@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emile55/slk-openclaw-sdk.git"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "openclaw": "*",
+    "typescript": "^6.0.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Emile55/slk-openclaw-sdk/issues"
+  },
+  "homepage": "https://github.com/Emile55/slk-openclaw-sdk#readme"
+}
